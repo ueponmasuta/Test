@@ -1,24 +1,21 @@
 interface X{
   void foo();
 }
-interface Y{
-  void bar();
-}
-interface Z extends X, Y{
+interface Z extends X{
   void hoge{};
 }
 
 abstract class A implements Z{
   public void foo(){
-    System.out.println("A");
+    hoge();
   }
 }
 class B extends A{
   public void foo(){
-    System.out.println("B");
+    System.out.println("A");
   }
   public void hoge(){
-    System.out.println("C");
+    System.out.println("B");
   }
 }
 
