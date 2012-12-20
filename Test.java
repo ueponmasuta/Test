@@ -2,7 +2,7 @@ interface X{
   void foo();
 }
 interface Z extends X{
-  void hoge{};
+  void hoge();
 }
 
 abstract class A implements Z{
